@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace为命名空间，应该是mapper接口的全称-->
+<mapper namespace="com.ahuang.shardingtest1.normalmapper.BookBaseInfoNormalMapper">
+    <select id="select" resultType="com.ahuang.shardingtest1.entity.BookBaseInfoEntity">
+        select * from BOOK_BASEINFO where bookId=1
+    </select>
+</mapper>
